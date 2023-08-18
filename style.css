@@ -1,0 +1,38 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* common color */
+.my-color-primary {
+    color: #FF5F1B;
+}
+
+.my-color-secondary {
+    color: #212121;
+}
+
+.my-bg-primary {
+    background-color: #FF5F1B;
+}
+
+.my-bg-secondary {
+    background-color: #212121;
+}
+
+/* common btn */
+.my-btn-one {
+    background-color: #FF5F1B;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 218px;
+    height: 61px;
+    border-radius: 29.5px 29.5px 0px 29.5px;
+}
+
+
+/* navbar */
+.navbar-center .menu li a {
+    display: inline-block;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}

@@ -4,6 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,63 +29,60 @@
         }
     </script>
     <title>Cuisine Food</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="relative">
 
-        <!-- Navbar -->
-        <nav class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+        <div class="max-w-7xl mx-auto">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="navbar-start">
+                    <a class="cursor-pointer"><img src="./Img/navbar/logo.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Menu</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contacts</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
-            </div>
-        </nav>
+                <div class="navbar-end gap-4">
+                    <a href=""><img src="./Img/navbar/Vector.png" alt=""></a>
+                    <a href=""><img src="./Img/navbar/Vector-1.png" alt=""></a>
+                </div>
+            </nav>
 
-        <!-- Hero section -->
-        <section class="h-screen bg-green-500 flex items-center justify-center">
-            <h2 class="font-bold text-2xl text-red-300">This is hero section</h2>
-        </section>
+            <!-- Hero section -->
+            <section class="h-[92vh] flex items-center justify-center">
+                <div class="grid grid-cols-2">
+                    <div class="space-y-6">
+                        <h2 class="font-bold text-[82px] my-color-secondary">Enjoy <span
+                                class="my-color-primary">Delicious
+                                Food</span> In Your Healthy Life</h2>
+                        <p class="my-color-secondary">combined with a handful of model sentence structures, to generate
+                            Lorem Ipsum
+                            which looks reasonable. The generated Lorem Ipsum is therefore always free
+                            from repetition, injected humour, or non-characteristic words therefore.</p>
+                        <button class="my-btn-one flex items-center justify-center gap-4">View menu <span><i
+                                    class="fa-solid fa-arrow-right-long"></i></span></button>
+                    </div>
+
+                    <div>
+                        <img src="./Img/HeroSection/" alt="">
+                    </div>
+                </div>
+
+                <!-- hero right -->
+                <div class="my-bg-secondary w-[560px] h-full absolute right-0 top-0 -z-20">
+
+                </div>
+            </section>
+        </div>
 
     </header>
 </body>
