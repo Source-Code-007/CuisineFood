@@ -40,21 +40,39 @@
 <body>
   <!-- Header -->
   <header class="relative overflow-hidden">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-6 md:mx-8 xl:mx-auto">
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav class="navbar bg-slate-700 bg-opacity-100 2xl:bg-opacity-0">
+
         <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-50" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 font-semibold shadow bg-base-100 rounded-box w-52">
+              <li class=""><a>Home</a></li>
+              <li class=""><a>About us</a></li>
+              <li class=""><a>Menu</a></li>
+              <li class=""><a>Blog</a></li>
+              <li class=""><a>Contacts</a></li>
+            </ul>
+          </div>
           <a class="cursor-pointer"><img src="./Img/navbar/logo.png" alt="" /></a>
         </div>
+
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About us</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contacts</a></li>
+          <ul class="menu menu-horizontal px-1 text-slate-100 2xl:text-slate-700">
+            <li class=""><a>Home</a></li>
+            <li class=""><a>About us</a></li>
+            <li class=""><a>Menu</a></li>
+            <li class=""><a>Blog</a></li>
+            <li class=""><a>Contacts</a></li>
           </ul>
         </div>
+
         <div class="navbar-end gap-4">
           <a href=""><img src="./Img/navbar/Vector.png" alt="" /></a>
           <a href=""><img src="./Img/navbar/Vector-1.png" alt="" /></a>
@@ -62,10 +80,10 @@
       </nav>
 
       <!-- Hero section -->
-      <section class="h-[92vh] flex items-center justify-center">
-        <div class="grid grid-cols-2">
-          <div class="space-y-6">
-            <h2 class="font-bold text-[82px] my-color-secondary">
+      <section class="h-[92vh] flex items-center justify-center overflow-hidden">
+        <div class="grid grid-cols-12">
+          <div class="space-y-6 col-span-12 xl:col-span-6">
+            <h2 class="font-bold text-[45px] md:text-[82px] my-color-secondary">
               Enjoy <span class="my-color-primary">Delicious Food</span> In
               Your Healthy Life
             </h2>
@@ -74,36 +92,36 @@
               generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
               words therefore.
             </p>
-            <button class="my-btn-one flex items-center justify-center gap-4">
+            <button class="my-btn-one flex items-center justify-center gap-4 group">
               View menu
-              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              <span class="group-hover:translate-x-3 transition"><i class="fa-solid fa-arrow-right-long"></i></span>
             </button>
           </div>
 
           <!-- TODO: issue on two photo on ellipse line -->
-          <div>
-            <img src="./Img/HeroSection/Group 1.png" class="absolute top-[611px] left-[1116px]" />
-            <img src="./Img/HeroSection/Group 2.png" class="absolute top-[117px] left-[1116px]" />
-            <img src="./Img/HeroSection/Group 3.png" class="absolute top-[358px] left-[993px]" />
-            <img src="./Img/HeroSection/Ellipse 1.png" class="absolute -z-10 top-[93px] left-[1058px]" />
+          <div class="col-span-0 xl:col-span-6">
+            <img src="./Img/HeroSection/Group 1.png" class="absolute -z-10 top-[611px] left-[1116px]" />
+            <img src="./Img/HeroSection/Group 2.png" class="absolute -z-10 top-[117px] left-[1116px]" />
+            <img src="./Img/HeroSection/Group 3.png" class="absolute -z-10 top-[358px] left-[993px]" />
+            <img src="./Img/HeroSection/Ellipse 1.png" class="absolute -z-10 -z-10 top-[93px] left-[1058px]" />
             <img src=" ./Img/HeroSection/pngegg (4) 2.png"
               class="h-[445px] w-[448px] absolute top-[224px] left-[1150px]" />
-            <img src="./Img/HeroSection/Group 4.png" class="absolute top-[572px] left-[1451px]" />
-            <img src="./Img/HeroSection/Group 5.png" class="absolute top-[90px] left-[1310px]" />
-            <img src="./Img/HeroSection/leafHomepage.png" class="absolute top-[80px] left-0" />
-            <img src="./Img/HeroSection/tomato.png" class="absolute top-[265px] left-[1655px]" />
-            <img src="./Img/HeroSection/leafBannerRight.png" class="absolute top-0 right-0" />
+            <img src="./Img/HeroSection/Group 4.png" class="absolute -z-10 top-[572px] left-[1451px]" />
+            <img src="./Img/HeroSection/Group 5.png" class="absolute -z-10 top-[90px] left-[1310px]" />
+            <img src="./Img/HeroSection/leafHomepage.png" class="absolute -z-10 top-[80px] left-0" />
+            <img src="./Img/HeroSection/tomato.png" class="absolute -z-10 top-[265px] left-[1655px]" />
+            <img src="./Img/HeroSection/leafBannerRight.png" class="absolute -z-10 top-0 right-0" />
           </div>
         </div>
 
         <!-- hero right -->
-        <div class="my-bg-secondary w-[560px] h-full absolute right-0 top-0 -z-20"></div>
+        <div class="my-bg-secondary w-[560px] h-full absolute right-0 top-0 -z-20 hidden 2xl:block"></div>
       </section>
     </div>
   </header>
 
   <!-- Popular dishes -->
-  <section class="py-28 relative popular-dishes">
+  <section class="py-28 relative overflow-hidden popular-dishes">
     <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
       Popular <span class="my-color-primary">Dishes</span>
     </h2>
@@ -243,10 +261,10 @@
   <!-- Discount section -->
   <section class="special-offer py-20">
     <div
-      class="max-w-7xl mx-auto my-shadow rounded-[20px] grid grid-cols-1 xl:grid-cols-2 gap-16 lg:gap-28 py-16 px-12">
+      class="max-w-7xl mx-6 md:mx-8 xl:mx-auto my-shadow rounded-[20px] grid grid-cols-1 xl:grid-cols-2 gap-16 lg:gap-28 py-16 px-12">
       <!-- discount left -->
       <div class="md:flex gap-3 items-center">
-        <img src="./Img/specialOffer.png" alt="special-offer" class="flex-1" />
+        <img src="./Img/specialOffer.png" alt="special-offer" class="flex-1 mx-auto" />
         <div class="w-2/6 space-y-3 font-semibold">
           <div>
             <span class="font-bold text-xl">Only For</span>
@@ -285,10 +303,10 @@
   </section>
 
   <!-- reserve table section -->
-  <section class="py-24">
-    <div class="grid grid-cols-12 gap-12 items-center max-w-7xl mx-auto">
-      <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-7  pr-12 lg:pr-28">
-        <h2 class="font-bold text-[38px] lg:text-[48px] my-color-secondary leading-[72px]">Do You Have Any Dinner
+  <section class="py-14 md:py-24 relative">
+    <div class="grid grid-cols-12 gap-12 items-center max-w-7xl mx-6 md:mx-8 xl:mx-auto">
+      <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-7 pr-0  md:pr-12 lg:pr-28">
+        <h2 class="font-bold text-[38px] lg:text-[48px] my-color-secondary md:leading-[72px]">Do You Have Any Dinner
           Plan Today ? <span class="my-color-primary">Reserve
             Your Table</span></h2>
         <p> combined with a handful of model sentence structures, to generate Lorem Ipsum
@@ -301,6 +319,9 @@
         <img src="./Img/reserveTable.png" alt="reserve table" class="mx-auto">
       </div>
     </div>
+
+    <!-- bg elem -->
+    <img src="./Img/backgroundElement/leaf4.png" alt="leaf-4" class="absolute -z-10 left-2 top-1/2 -translate-y-6">
 
   </section>
 
@@ -555,7 +576,7 @@
   <!-- browser catalog section -->
   <section class="special-offer py-20 relative overflow-hidden">
     <div
-      class="max-w-7xl mx-auto my-shadow rounded-[20px] grid grid-cols-1 xl:grid-cols-2 gap-16 items-center lg:gap-28 py-16 px-12">
+      class="max-w-7xl mx-6 md:mx-8 xl:mx-auto my-shadow rounded-[20px] grid grid-cols-1 xl:grid-cols-2 gap-16 items-center lg:gap-28 py-16 px-12">
       <!-- catalog left -->
       <div>
         <ul class="text-lg text-[#A1A1A1] space-y-4 catalog-services pr-4 md:pr-16">
@@ -584,12 +605,12 @@
         <img src="./Img/reserveTable.png" alt="catalog-right" class="mx-auto">
       </div>
     </div>
-    <img src="./Img/backgroundElement/leaf.png" alt="catalog-leaf" class="absolute -right-6 bottom-12">
+    <img src="./Img/backgroundElement/leaf.png" alt="catalog-leaf" class="absolute -z-10 -right-6 bottom-12">
   </section>
 
   <!-- Welcome to our restaurant section -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <section class="py-16 relative">
+    <div class="max-w-7xl mx-6 md:mx-8 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
         <img src="./Img/welcomeResChef.png" alt="">
       </div>
@@ -608,11 +629,14 @@
       </div>
     </div>
 
+    <!-- bg elem -->
+    <img src="./Img/backgroundElement/image20.png" alt="img-20" class="absolute -z-10 top-6 left-0">
+
   </section>
 
   <!-- Mobile app section -->
   <section class="py-16 bg-[#FF5F1B] bg-opacity-30">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-between">
+    <div class="max-w-7xl mx-6 md:mx-8 xl:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-between">
       <div class="space-y-4">
         <h2 class="font-bold text-[35px] md:text-[48px] my-color-secondary leading-[72px]">Never Feel Hungry <br>
           <span class="my-color-primary">Download Our Mobile App</span>
@@ -634,7 +658,7 @@
 
   <!-- Footer -->
   <footer class="my-bg-secondary text-slate-300 mt-24">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-6 md:mx-8 xl:mx-auto">
 
       <!-- footer top -->
       <div class="py-8 md:py-14 grid grid-cols-12 gap-10">
@@ -681,25 +705,38 @@
           </ul>
         </div>
 
-        <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-2">
+        <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-3">
           <h2 class="font-bold text-2xl my-color-primary">Property Management</h2>
           <ul class="space-y-3">
-            <li>
-              <p>63764 Lalbag Road,Dhaka-1000</p>
+            <li class="flex gap-2">
+              <span class="text-xl"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <p>63764 Lalbag Road,Dhaka-1000</p>
+                <p>Get Directions</p>
+              </div>
             </li>
-            <li>
-              <p>Get Directions</p>
-            </li>
-            <li>
+            <li class="flex gap-2">
+              <span class="text-xl"><i class="fa-solid fa-phone"></i></span>
               <p>+0584 55487 554</p>
             </li>
-            <li>
+            <li class="flex gap-2">
+              <span class="text-xl"><i class="fa-regular fa-envelope"></i></span>
               <p>mail@gmail.com</p>
             </li>
-            <li>
-              <p>Sta-Fri : 7am-12pm, Mon-Fri:*am-12pm</p>
+            <li class="flex gap-2">
+              <span class="text-xl"><i class="fa-solid fa-business-time"></i></span>
+              <p>Sat-Fri : 7am-12pm, Mon-Fri:*am-12pm</p>
             </li>
           </ul>
+          <div class="my-color-primary flex gap-3">
+            <span class="scale-120 hover:scale-125 transition cursor-pointer"><i
+                class="fa-brands fa-youtube"></i></span>
+            <span class="scale-120 hover:scale-125 transition cursor-pointer"><i
+                class="fa-brands fa-facebook-f"></i></span>
+            <span class="scale-120 hover:scale-125 transition cursor-pointer"><i
+                class="fa-brands fa-twitter"></i></span>
+            <span class="scale-120 hover:scale-125 transition cursor-pointer"><i class="fa-solid fa-g"></i></span>
+          </div>
         </div>
 
       </div>
