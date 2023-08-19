@@ -18,6 +18,11 @@
     background-color: #212121;
 }
 
+/* common shadow */
+.my-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 /* common btn */
 .my-btn-one {
     background-color: #FF5F1B;
@@ -37,3 +42,6 @@
     font-weight: 500;
     font-size: 20px;
 }
+
+
+/* special offer */
