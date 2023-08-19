@@ -44,4 +44,29 @@
 }
 
 
-/* special offer */
+/* catalog-services */
+.catalog-services li{
+    padding: 10px;
+    padding-right: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.catalog-services li div{
+        position: relative;
+        padding-left: 13px;
+}
+.catalog-services li div::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #A1A1A1;
+}
+.catalog-services li.active-catalog>div::before{
+    background-color: #FF5F1B;
+}
+.catalog-services li.active-catalog{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
