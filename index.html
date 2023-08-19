@@ -103,33 +103,134 @@
   </header>
 
   <!-- Popular dishes -->
-  <section class="py-28 relative">
+  <section class="py-28 relative popular-dishes">
     <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
       Popular <span class="my-color-primary">Dishes</span>
     </h2>
 
-    <div class="max-w-7xl mx-auto">
-      <div class="border border-[#FF5F1B] w-2/6">
-        <img src="./Img/popular-dishes/popular-dishes-one.png" alt="" class="mx-auto" />
-        <div class="space-y-3 p-4">
-          <div class="flex gap-3 items-center justify-between">
-            <div>
-              <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
-                Teriyaki Beef
-              </h2>
-              <p class="opacity-50">With Sticky White</p>
+    <!-- swiper sliders -->
+    <div #swiperRef="" class="swiper mySwiper px-8">
+      <div class="swiper-wrapper py-[80px] xl:pb-[50px]">
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+
+            <img src="./Img/popular-dishes/popular-dishes-one.png" alt="" class="mx-auto h-[260px] w-auto" />
+            <div class="space-y-8 p-4">
+              <div class="flex gap-3 items-center justify-between">
+                <div>
+                  <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
+                    Teriyaki Beef
+                  </h2>
+                  <p class="opacity-50">With Sticky White</p>
+                </div>
+                <span
+                  class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
+                    class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 15.99</span>
+                <span
+                  class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
+                    class="fa-solid fa-plus"></i></span>
+              </div>
             </div>
-            <span
-              class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
-                class="fa-solid fa-heart"></i></span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 15.99</span>
-            <span
-              class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
-                class="fa-solid fa-plus"></i></span>
+
           </div>
         </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+
+            <img src="./Img/popular-dishes/popular-dishes-two.png" alt="" class="mx-auto h-[260px] w-auto" />
+            <div class="space-y-8 p-4">
+              <div class="flex gap-3 items-center justify-between">
+                <div>
+                  <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
+                    Yakitori Duck
+                  </h2>
+                  <p class="opacity-50">Tender Shredded Duck</p>
+                </div>
+                <span
+                  class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
+                    class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 20.50</span>
+                <span
+                  class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
+                    class="fa-solid fa-plus"></i></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+
+            <img src="./Img/popular-dishes/popular-dishes-threepng.png" alt="" class="mx-auto h-[260px] w-auto" />
+            <div class="space-y-8 p-4">
+              <div class="flex gap-3 items-center justify-between">
+                <div>
+                  <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
+                    Italian Pasta
+                  </h2>
+                  <p class="opacity-50">Pasta with Tomato Sauce</p>
+                </div>
+                <span
+                  class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
+                    class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 10</span>
+                <span
+                  class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
+                    class="fa-solid fa-plus"></i></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+
+            <img src="./Img/popular-dishes/popular-dishes-two.png" alt="" class="mx-auto h-[260px] w-auto" />
+            <div class="space-y-8 p-4">
+              <div class="flex gap-3 items-center justify-between">
+                <div>
+                  <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
+                    Grilled Salmon
+                  </h2>
+                  <p class="opacity-50">With Sticky White</p>
+                </div>
+                <span
+                  class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
+                    class="fa-solid fa-heart"></i></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 26.99</span>
+                <span
+                  class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
+                    class="fa-solid fa-plus"></i></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-button-next left-[66%] -translate-x-3 -translate-y-9 top-full xl:top-1/2 xl:-translate-y-0">
+        <span class="text-2xl"><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      <div class="swiper-button-prev left-[31%] translate-x-3 -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0">
+        <span class="text-2xl"><i class="fa-solid fa-arrow-left"></i></span>
       </div>
     </div>
 
@@ -210,7 +311,7 @@
     </h2>
 
     <!-- swiper sliders -->
-    <div #swiperRef="" class="swiper mySwiper">
+    <div #swiperRef="" class="swiper mySwiper px-8">
       <div class="swiper-wrapper pt-[30px] pb-[80px] xl:pb-[50px]">
 
         <!-- swiper slide -->
@@ -368,8 +469,10 @@
 
 
       </div>
-      <div class="swiper-button-next left-[66%] -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
-      <div class="swiper-button-prev left-[31%]  -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
+      <div class="swiper-button-next left-[66%] -translate-x-3 -translate-y-9 top-full xl:top-1/2 xl:-translate-y-0">
+      </div>
+      <div class="swiper-button-prev left-[31%] translate-x-3 -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0">
+      </div>
     </div>
 
   </section>
@@ -382,17 +485,17 @@
 
 
     <!-- swiper sliders -->
-    <div #swiperRef="" class="swiper mySwiper">
-      <div class="swiper-wrapper pt-[30px] pb-[80px] xl:pb-[50px]">
+    <div #swiperRef="" class="swiper mySwiper px-8">
+      <div class="swiper-wrapper py-[80px] xl:pb-[50px]">
 
         <!-- swiper slide -->
         <div class="swiper-slide">
           <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
-            <img src="./Img/client/images (1).jpg" alt="client-1"
+            <img src="./Img/chefs/chef-four.png" alt="client-1"
               class="rounded-t border-2 border-green-500 w-full h-[350px]">
             <div class="space-y-2 px-3 py-5 text-center">
-              <h2 class="font-semibold text-lg">Danial potter</h2>
-              <p>Product designer</p>
+              <h2 class="font-semibold text-lg">Helena Rizzo</h2>
+              <p>Michelin-starred restaurant</p>
             </div>
 
           </div>
@@ -401,11 +504,11 @@
         <!-- swiper slide -->
         <div class="swiper-slide">
           <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
-            <img src="./Img/client/images (1).jpg" alt="client-1"
+            <img src="./Img/chefs/chef-one.png" alt="client-1"
               class="rounded-t border-2 border-green-500 w-full h-[350px]">
             <div class="space-y-2 px-3 py-5 text-center">
-              <h2 class="font-semibold text-lg">Danial potter</h2>
-              <p>Product designer</p>
+              <h2 class="font-semibold text-lg">Clare Smyth</h2>
+              <p>Michelin-starred restaurant</p>
             </div>
 
           </div>
@@ -414,11 +517,12 @@
         <!-- swiper slide -->
         <div class="swiper-slide">
           <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
-            <img src="./Img/client/images (1).jpg" alt="client-1"
+            <img src="./Img/chefs/chef-three.png" alt="client-1"
               class="rounded-t border-2 border-green-500 w-full h-[350px]">
             <div class="space-y-2 px-3 py-5 text-center">
-              <h2 class="font-semibold text-lg">Danial potter</h2>
-              <p>Product designer</p>
+
+              <h2 class="font-semibold text-lg">Jamie Oliver</h2>
+              <p>Michelin-starred restaurant</p>
             </div>
 
           </div>
@@ -427,36 +531,24 @@
         <!-- swiper slide -->
         <div class="swiper-slide">
           <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
-            <img src="./Img/client/images (1).jpg" alt="client-1"
+            <img src="./Img/chefs/chef-two.png" alt="client-1"
               class="rounded-t border-2 border-green-500 w-full h-[350px]">
             <div class="space-y-2 px-3 py-5 text-center">
-              <h2 class="font-semibold text-lg">Danial potter</h2>
-              <p>Product designer</p>
+
+              <h2 class="font-semibold text-lg">Wolfgang Puck</h2>
+              <p>Michelin-starred restaurant</p>
             </div>
 
           </div>
         </div>
 
-        <!-- swiper slide -->
-        <div class="swiper-slide">
-          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
-            <img src="./Img/client/images (1).jpg" alt="client-1"
-              class="rounded-t border-2 border-green-500 w-full h-[350px]">
-            <div class="space-y-2 px-3 py-5 text-center">
-              <h2 class="font-semibold text-lg">Danial potter</h2>
-              <p>Product designer</p>
-            </div>
-
-          </div>
+        <div class="swiper-button-next left-[66%] -translate-y-9 top-full xl:top-1/2 xl:-translate-y-0">
+          <span class="text-2xl"><i class="fa-solid fa-arrow-right"></i></span>
         </div>
-
-
+        <div class="swiper-button-prev left-[31%] -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0">
+          <span class="text-2xl"><i class="fa-solid fa-arrow-left"></i></span>
+        </div>
       </div>
-      <div class="swiper-button-next left-[66%] -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
-      <div class="swiper-button-prev left-[31%]  -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
-    </div>
-
-
 
   </section>
 
@@ -614,7 +706,7 @@
 
 
       <!-- footer bottom -->
-      <div class="border-t-2 border-[#FF5F1B] py-4 flex gap-10 justify-center text-[#ff5f1b9a] font-semibold">
+      <div class="border-t-[1px] border-[#FF5F1B] py-4 flex gap-10 justify-center text-[#ff5f1b9a] font-semibold">
         <a href="">@My Company</a>
         <a href="">Impressum</a>
         <a href="">AGB</a>

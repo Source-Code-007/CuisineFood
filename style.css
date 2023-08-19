@@ -97,10 +97,9 @@
 /* chef section swipper */
 .chef-section .swiper-button-next, .chef-section .swiper-button-prev{
     background-color: #FF5F1B;
-    height: 60px;
-    width: 60px;
-    /* padding: 10px; */
-    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,4 +108,41 @@
 .chef-section .swiper-slide-next{
     border: 2px solid #FF5F1B;   
     border-radius: 10px;
+    transform: translateY(-50px);   
+}
+.chef-section .swiper-button-prev::after{
+    content: none;
+}
+.chef-section .swiper-button-next::after{
+    content: none;
+}
+.chef-section .swiper-slide-next img{
+    height: 450px;
+}
+
+/* Popular dishes swipper */
+.popular-dishes .swiper-button-next, .popular-dishes .swiper-button-prev{
+    background-color: #FF5F1B;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.popular-dishes .swiper-slide-next{
+    border: 2px solid #FF5F1B;   
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px #ff5f1b36;
+    transform: translateY(-50px);   
+}
+.popular-dishes .swiper-button-prev::after{
+    content: none;
+}
+.popular-dishes .swiper-button-next::after{
+    content: none;
+}
+.popular-dishes .swiper-slide-next img{
+    height: 350px;
 }
