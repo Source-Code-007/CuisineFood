@@ -72,4 +72,41 @@
 }
 
 
-/* footer */
+
+
+
+/* swipper js */
+/* client section swiper */
+.clients-review-section .swiper-button-next, .clients-review-section .swiper-button-prev{
+    background-color: #FF5F1B;
+    height: 60px;
+    width: 60px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.clients-review-section .swiper-slide-next{
+    border: 2px solid #FF5F1B;   
+    border-radius: 10px;
+}
+
+/* chef section swipper */
+.chef-section .swiper-button-next, .chef-section .swiper-button-prev{
+    background-color: #FF5F1B;
+    height: 60px;
+    width: 60px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.chef-section .swiper-slide-next{
+    border: 2px solid #FF5F1B;   
+    border-radius: 10px;
+}

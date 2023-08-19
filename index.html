@@ -28,6 +28,11 @@
       },
     };
   </script>
+
+  <!-- swipper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   <title>Cuisine Food</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
@@ -199,31 +204,260 @@
   </section>
 
   <!-- clients review section -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
-        Our Clients <span class="my-color-primary">Review</span>
-      </h2>
+  <section class="py-16 clients-review-section">
+    <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
+      Our Clients <span class="my-color-primary">Review</span>
+    </h2>
 
-      <div class="border-2 border-red-500 h-[30vh] w-4/6">
-        <h2>Our client review</h2>
+    <!-- swiper sliders -->
+    <div #swiperRef="" class="swiper mySwiper">
+      <div class="swiper-wrapper pt-[30px] pb-[80px] xl:pb-[50px]">
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+            <!-- client user -->
+            <div class="flex gap-3 items-center">
+              <img src="./Img/client/images (1).jpg" alt="client-1"
+                class="!h-16 !w-16 rounded-full border-2 border-green-500">
+              <div class="space-y-2">
+                <h2 class="font-semibold">Danial potter</h2>
+                <p>Product designer</p>
+              </div>
+            </div>
+            <p>I Believe in Lifelong learning and this is
+              a great place to learn from experts. I have
+              learned a lot and recommended it to all my
+              friends.</p>
+            <!-- rating -->
+            <div class="flex items-center gap-3">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+              </div>
+              <span class="my-color-secondary">(3.00)</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+            <!-- client user -->
+            <div class="flex gap-3 items-center">
+              <img src="./Img/client/1676900178931.jpg" alt="client-1"
+                class="!h-16 !w-16 rounded-full border-2 border-green-500">
+              <div class="space-y-2">
+                <h2 class="font-semibold">Albert Cole</h2>
+                <p>Designer</p>
+              </div>
+            </div>
+            <p>I Believe in Lifelong learning and this is
+              a great place to learn from experts. I have
+              learned a lot and recommended it to all my
+              friends.</p>
+            <!-- rating -->
+            <div class="flex items-center gap-3">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+              </div>
+              <span class="my-color-secondary">(4.00)</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+            <!-- client user -->
+            <div class="flex gap-3 items-center">
+              <img src="./Img/client/images (2).jpg" alt="client-1"
+                class="!h-16 !w-16 rounded-full border-2 border-green-500">
+              <div class="space-y-2">
+                <h2 class="font-semibold">Alison Dawn</h2>
+                <p>Developer</p>
+              </div>
+            </div>
+            <p>I Believe in Lifelong learning and this is
+              a great place to learn from experts. I have
+              learned a lot and recommended it to all my
+              friends.</p>
+            <!-- rating -->
+            <div class="flex items-center gap-3">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+              </div>
+              <span class="my-color-secondary">(3.00)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+            <!-- client user -->
+            <div class="flex gap-3 items-center">
+              <img src="./Img/client/images (3).jpg" alt="client-1"
+                class="!h-16 !w-16 rounded-full border-2 border-green-500">
+              <div class="space-y-2">
+                <h2 class="font-semibold">Brian Lee</h2>
+                <p>Motion graphic</p>
+              </div>
+            </div>
+            <p>I Believe in Lifelong learning and this is
+              a great place to learn from experts. I have
+              learned a lot and recommended it to all my
+              friends.</p>
+            <!-- rating -->
+            <div class="flex items-center gap-3">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" checked />
+              </div>
+              <span class="my-color-secondary">(5.00)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg p-8 space-y-8">
+            <!-- client user -->
+            <div class="flex gap-3 items-center">
+              <img src="./Img/client/images.jpg" alt="client-1"
+                class="!h-16 !w-16 rounded-full border-2 border-green-500">
+              <div class="space-y-2">
+                <h2 class="font-semibold">Harry Potter</h2>
+                <p>Digital Marketer</p>
+              </div>
+            </div>
+            <p>I Believe in Lifelong learning and this is
+              a great place to learn from experts. I have
+              learned a lot and recommended it to all my
+              friends.</p>
+            <!-- rating -->
+            <div class="flex items-center gap-3">
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FF5F1B]" />
+              </div>
+              <span class="my-color-secondary">(3.00)</span>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
-
+      <div class="swiper-button-next left-[66%] -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
+      <div class="swiper-button-prev left-[31%]  -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
     </div>
+
   </section>
 
   <!-- Our chef section -->
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
-        Our<span class="my-color-primary">Chef's</span>
-      </h2>
+  <section class="py-16 chef-section">
+    <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
+      Our <span class="my-color-primary">Chef's</span>
+    </h2>
 
-      <div class="border-2 border-red-500 h-[30vh] w-4/6">
-        <h2>Our chef</h2>
+
+    <!-- swiper sliders -->
+    <div #swiperRef="" class="swiper mySwiper">
+      <div class="swiper-wrapper pt-[30px] pb-[80px] xl:pb-[50px]">
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
+            <img src="./Img/client/images (1).jpg" alt="client-1"
+              class="rounded-t border-2 border-green-500 w-full h-[350px]">
+            <div class="space-y-2 px-3 py-5 text-center">
+              <h2 class="font-semibold text-lg">Danial potter</h2>
+              <p>Product designer</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
+            <img src="./Img/client/images (1).jpg" alt="client-1"
+              class="rounded-t border-2 border-green-500 w-full h-[350px]">
+            <div class="space-y-2 px-3 py-5 text-center">
+              <h2 class="font-semibold text-lg">Danial potter</h2>
+              <p>Product designer</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
+            <img src="./Img/client/images (1).jpg" alt="client-1"
+              class="rounded-t border-2 border-green-500 w-full h-[350px]">
+            <div class="space-y-2 px-3 py-5 text-center">
+              <h2 class="font-semibold text-lg">Danial potter</h2>
+              <p>Product designer</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
+            <img src="./Img/client/images (1).jpg" alt="client-1"
+              class="rounded-t border-2 border-green-500 w-full h-[350px]">
+            <div class="space-y-2 px-3 py-5 text-center">
+              <h2 class="font-semibold text-lg">Danial potter</h2>
+              <p>Product designer</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- swiper slide -->
+        <div class="swiper-slide">
+          <div class="w-full min-h-[280px] text-left my-shadow  rounded-lg">
+            <img src="./Img/client/images (1).jpg" alt="client-1"
+              class="rounded-t border-2 border-green-500 w-full h-[350px]">
+            <div class="space-y-2 px-3 py-5 text-center">
+              <h2 class="font-semibold text-lg">Danial potter</h2>
+              <p>Product designer</p>
+            </div>
+
+          </div>
+        </div>
+
+
       </div>
-
+      <div class="swiper-button-next left-[66%] -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
+      <div class="swiper-button-prev left-[31%]  -translate-y-10 top-full xl:top-1/2 xl:-translate-y-0"></div>
     </div>
+
+
+
   </section>
 
   <!-- browser catalog section -->
@@ -307,7 +541,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="my-bg-secondary text-slate-300">
+  <footer class="my-bg-secondary text-slate-300 mt-24">
     <div class="max-w-7xl mx-auto">
 
       <!-- footer top -->
@@ -358,11 +592,21 @@
         <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-2">
           <h2 class="font-bold text-2xl my-color-primary">Property Management</h2>
           <ul class="space-y-3">
-            <li><p>63764 Lalbag Road,Dhaka-1000</p></li>
-            <li><p>Get Directions</p></li>
-            <li><p>+0584 55487 554</p></li>
-            <li><p>mail@gmail.com</p></li>
-            <li><p>Sta-Fri : 7am-12pm, Mon-Fri:*am-12pm</p></li>
+            <li>
+              <p>63764 Lalbag Road,Dhaka-1000</p>
+            </li>
+            <li>
+              <p>Get Directions</p>
+            </li>
+            <li>
+              <p>+0584 55487 554</p>
+            </li>
+            <li>
+              <p>mail@gmail.com</p>
+            </li>
+            <li>
+              <p>Sta-Fri : 7am-12pm, Mon-Fri:*am-12pm</p>
+            </li>
           </ul>
         </div>
 
@@ -380,5 +624,37 @@
   </footer>
 
 </body>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    // slidesPerView: 3,
+    breakpoints: {
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 1,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 1000px
+      1000: {
+        slidesPerView: 3,
+      },
+    },
+    centeredSlides: false,
+    spaceBetween: 80,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 
 </html>
