@@ -1,236 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Tailwind and Daisy UI -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                        }
-                    }
-                }
-            }
-    </script>
-    <title>Cuisine Food</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!-- Header -->
-    <header class="relative overflow-hidden">
-      <div class="max-w-7xl mx-auto">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <div class="navbar-start">
-            <a class="cursor-pointer"
-              ><img src="./Img/navbar/logo.png" alt=""
-            /></a>
+  <!-- Tailwind and Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <title>Cuisine Food</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-start">
+          <a class="cursor-pointer"><img src="./Img/navbar/logo.png" alt="" /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Menu</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contacts</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-4">
+          <a href=""><img src="./Img/navbar/Vector.png" alt="" /></a>
+          <a href=""><img src="./Img/navbar/Vector-1.png" alt="" /></a>
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <section class="h-[92vh] flex items-center justify-center">
+        <div class="grid grid-cols-2">
+          <div class="space-y-6">
+            <h2 class="font-bold text-[82px] my-color-secondary">
+              Enjoy <span class="my-color-primary">Delicious Food</span> In
+              Your Healthy Life
+            </h2>
+            <p class="my-color-secondary">
+              combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+              generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+              words therefore.
+            </p>
+            <button class="my-btn-one flex items-center justify-center gap-4">
+              View menu
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>About us</a></li>
-              <li><a>Menu</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contacts</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end gap-4">
-            <a href=""><img src="./Img/navbar/Vector.png" alt="" /></a>
-            <a href=""><img src="./Img/navbar/Vector-1.png" alt="" /></a>
-          </div>
-        </nav>
 
-        <!-- Hero section -->
-        <section class="h-[92vh] flex items-center justify-center">
-          <div class="grid grid-cols-2">
-            <div class="space-y-6">
-              <h2 class="font-bold text-[82px] my-color-secondary">
-                Enjoy <span class="my-color-primary">Delicious Food</span> In
-                Your Healthy Life
+          <!-- TODO: issue on two photo on ellipse line -->
+          <div>
+            <img src="./Img/HeroSection/Group 1.png" class="absolute top-[611px] left-[1116px]" />
+            <img src="./Img/HeroSection/Group 2.png" class="absolute top-[117px] left-[1116px]" />
+            <img src="./Img/HeroSection/Group 3.png" class="absolute top-[358px] left-[993px]" />
+            <img src="./Img/HeroSection/Ellipse 1.png" class="absolute -z-10 top-[93px] left-[1058px]" />
+            <img src=" ./Img/HeroSection/pngegg (4) 2.png"
+              class="h-[445px] w-[448px] absolute top-[224px] left-[1150px]" />
+            <img src="./Img/HeroSection/Group 4.png" class="absolute top-[572px] left-[1451px]" />
+            <img src="./Img/HeroSection/Group 5.png" class="absolute top-[90px] left-[1310px]" />
+            <img src="./Img/HeroSection/leafHomepage.png" class="absolute top-[80px] left-0" />
+            <img src="./Img/HeroSection/tomato.png" class="absolute top-[265px] left-[1655px]" />
+            <img src="./Img/HeroSection/leafBannerRight.png" class="absolute top-0 right-0" />
+          </div>
+        </div>
+
+        <!-- hero right -->
+        <div class="my-bg-secondary w-[560px] h-full absolute right-0 top-0 -z-20"></div>
+      </section>
+    </div>
+  </header>
+
+  <!-- Popular dishes -->
+  <section class="py-28 relative">
+    <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
+      Popular <span class="my-color-primary">Dishes</span>
+    </h2>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="border border-[#FF5F1B] w-2/6">
+        <img src="./Img/popular-dishes/popular-dishes-one.png" alt="" class="mx-auto" />
+        <div class="space-y-3 p-4">
+          <div class="flex gap-3 items-center justify-between">
+            <div>
+              <h2 class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">
+                Teriyaki Beef
               </h2>
-              <p class="my-color-secondary">
-                combined with a handful of model sentence structures, to
-                generate Lorem Ipsum which looks reasonable. The generated Lorem
-                Ipsum is therefore always free from repetition, injected humour,
-                or non-characteristic words therefore.
-              </p>
-              <button class="my-btn-one flex items-center justify-center gap-4">
-                View menu
-                <span><i class="fa-solid fa-arrow-right-long"></i></span>
-              </button>
+              <p class="opacity-50">With Sticky White</p>
             </div>
-
-            <!-- TODO: issue on two photo on ellipse line -->
-            <div>
-              <img
-                src="./Img/HeroSection/Group 1.png"
-                class="absolute top-[611px] left-[1116px]"
-              />
-              <img
-                src="./Img/HeroSection/Group 2.png"
-                class="absolute top-[117px] left-[1116px]"
-              />
-              <img
-                src="./Img/HeroSection/Group 3.png"
-                class="absolute top-[358px] left-[993px]"
-              />
-              <img
-                src="./Img/HeroSection/Ellipse 1.png"
-                class="absolute -z-10 top-[93px] left-[1058px]"
-              />
-              <img
-                src=" ./Img/HeroSection/pngegg (4) 2.png"
-                class="h-[445px] w-[448px] absolute top-[224px] left-[1150px]"
-              />
-              <img
-                src="./Img/HeroSection/Group 4.png"
-                class="absolute top-[572px] left-[1451px]"
-              />
-              <img
-                src="./Img/HeroSection/Group 5.png"
-                class="absolute top-[90px] left-[1310px]"
-              />
-              <img
-                src="./Img/HeroSection/leafHomepage.png"
-                class="absolute top-[80px] left-0"
-              />
-              <img
-                src="./Img/HeroSection/tomato.png"
-                class="absolute top-[265px] left-[1655px]"
-              />
-              <img
-                src="./Img/HeroSection/leafBannerRight.png"
-                class="absolute top-0 right-0"
-              />
-            </div>
+            <span
+              class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"><i
+                class="fa-solid fa-heart"></i></span>
           </div>
-
-          <!-- hero right -->
-          <div
-            class="my-bg-secondary w-[560px] h-full absolute right-0 top-0 -z-20"
-          ></div>
-        </section>
+          <div class="flex items-center justify-between">
+            <span class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold">$ 15.99</span>
+            <span
+              class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"><i
+                class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Popular dishes -->
-    <section class="py-28 relative">
-      <h2 class="text-[64px] my-color-secondary mb-10 text-center font-bold">
-        Popular <span class="my-color-primary">Dishes</span>
-      </h2>
+    <!-- bg elem -->
+    <img src="./Img/backgroundElement/redChilly.png" class="absolute left-0 top-[5px] w-[219px] h-[275px]" />
+    <img src="./Img/backgroundElement/leaf.png" class="absolute left-[500px] top-[80px] h-[98px] w-[98px]" />
+    <img src="./Img/backgroundElement/image 21.png" class="absolute right-0 top-[80px]" />
+  </section>
 
-      <div class="max-w-7xl mx-auto">
-        <div class="border border-[#FF5F1B] w-2/6">
-          <img
-            src="./Img/popular-dishes/popular-dishes-one.png"
-            alt=""
-            class="mx-auto"
-          />
-          <div class="space-y-3 p-4">
-            <div class="flex gap-3 items-center justify-between">
-              <div>
-                <h2
-                  class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold"
-                >
-                  Teriyaki Beef
-                </h2>
-                <p class="opacity-50">With Sticky White</p>
-              </div>
-              <span
-                class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-slate-300 my-color-primary"
-                ><i class="fa-solid fa-heart"></i
-              ></span>
-            </div>
-            <div class="flex items-center justify-between">
-              <span
-                class="text-[18px] md:text-[22px] xl:text-[30px] my-color-secondary font-semibold"
-                >$ 15.99</span
-              >
-              <span
-                class="my-bg-primary h-[50px] w-[50px] text-xl lg:text-3xl flex items-center justify-center rounded-full text-slate-50"
-                ><i class="fa-solid fa-plus"></i
-              ></span>
-            </div>
+  <!-- Discount section -->
+  <section class="special-offer py-20">
+    <div
+      class="max-w-7xl mx-auto my-shadow rounded-[20px] grid grid-cols-1 xl:grid-cols-2 gap-16 lg:gap-28 py-16 px-12">
+      <!-- discount left -->
+      <div class="md:flex gap-3 items-center">
+        <img src="./Img/specialOffer.png" alt="special-offer" class="flex-1" />
+        <div class="w-2/6 space-y-3 font-semibold">
+          <div>
+            <span class="font-bold text-xl">Only For</span>
+            <span class="my-color-primary font-bold text-xl md:text-3xl block">Vegetables</span>
+          </div>
+          <div>
+            <span>Regular Price :</span>
+            <span class="my-color-primary text-lg block">$120</span>
+          </div>
+          <div>
+            <span>Offer Price :</span>
+            <span class="my-color-primary text-lg block">$120</span>
           </div>
         </div>
       </div>
 
-      <!-- bg elem -->
-      <img
-        src="./Img/backgroundElement/redChilly.png"
-        class="absolute left-0 top-[5px] w-[219px] h-[275px]"
-      />
-      <img
-        src="./Img/backgroundElement/leaf.png"
-        class="absolute left-[500px] top-[80px] h-[98px] w-[98px]"
-      />
-      <img
-        src="./Img/backgroundElement/image 21.png"
-        class="absolute right-0 top-[80px]"
-      />
-    </section>
-
-    <!-- Discount section -->
-    <section class="special-offer py-20">
-      <div
-        class="max-w-7xl mx-auto my-shadow grid grid-cols-1 lg:grid-cols-2 py-16 px-3"
-      >
-        <!-- discount left -->
-        <div class="flex gap-3 items-center">
-          <img
-            src="./Img/specialOffer.png"
-            alt="special-offer"
-            class="flex-1"
-          />
-          <div class="w-2/6 space-y-3 font-semibold">
-            <div>
-              <span class="font-bold text-xl">Only For</span>
-              <span class="my-color-primary font-bold text-xl md:text-3xl block"
-                >Vegetables</span
-              >
-            </div>
-            <div>
-              <span>Regular Price :</span>
-              <span class="my-color-primary text-lg block">$120</span>
-            </div>
-            <div>
-              <span>Offer Price :</span>
-              <span class="my-color-primary text-lg block">$120</span>
-            </div>
-          </div>
-        </div>
-        <!-- discount right -->
-        <div>
-          <h3></h3>
-          <h2 class="my-color-primary">50% OFF</h2>
+      <!-- discount right -->
+      <div class="space-y-2">
+        <h3 class="my-color-secondary font-semibold text-xl lg:text-3xl text-right">
+          Special Offer
+        </h3>
+        <h2 class="my-color-primary font-bold text-[50px] md:text-[90px] xl:text-[128px] text-right">
+          50% OFF
+        </h2>
+        <p class="my-color-secondary opacity-70">
+          Combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+          generated Lorem Ipsum is therefore always free from repetition, injected humor, or non-characteristic words
+          therefore.
+        </p>
+        <div class="text-right space-y-3">
+          <p class="text-lg my-color-primary font-semibold">Use Coupon: WE54QDS5</p>
+          <button class="my-btn-one ">Order Now</button>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- reserve table section -->
+  <section class="py-18">
+    <div class="grid grid-cols-12 gap-12 items-center max-w-7xl mx-auto">
+      <div class="space-y-4 col-span-12 md:col-span-6 xl:col-span-7  pr-12 lg:pr-28">
+        <h2 class="font-bold text-[38px] lg:text-[48px] my-color-secondary leading-[72px]">Do You Have Any Dinner
+          Plan Today ? <span class="my-color-primary">Reserve
+            Your Table</span></h2>
+        <p> combined with a handful of model sentence structures, to generate Lorem Ipsum
+          which looks reasonable. The generated Lorem Ipsum is therefore always free
+          from repetition, injected humour, or non-characteristic words therefore.</p>
+        <button class="my-btn-one !mt-4">Make reservation</button>
+      </div>
+  
+      <div class="col-span-12 md:col-span-6 xl:col-span-5">
+        <img src="./Img/reserveTable.png" alt="reserve table" class="mx-auto">
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
 </html>
